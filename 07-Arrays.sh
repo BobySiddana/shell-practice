@@ -1,0 +1,4 @@
+#!/bin/bash
+
+FRUITS=("apple" "mango" "grapes" "orange")
+echo "Favourite Fruit is:$FRUITS[0]"
