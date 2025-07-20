@@ -31,7 +31,7 @@ then
     dnf install mysql -y &>>$LOG_FILE
     VALIDATE $? "mysql"
   else
-      echo "mysql is already insalled.. noting to do": | tee -a $LOG_FILE
+      echo "mysql is already insalled.. noting to do" | tee -a $LOG_FILE
 fi
 dnf list installed pyton3 &>>$LOG_FILE
 if [ $? -ne 0 ]
@@ -40,7 +40,7 @@ then
     dnf install python3 -y &>>$LOG_FILE
     VALIDATE $? "python3"
   else
-      echo "python3 is already insalled.. noting to do": | tee -a $LOG_FILE
+      echo "python3 is already insalled.. noting to do" | tee -a $LOG_FILE
 fi
 dnf list installed nginx &>>$LOG_FILE
 if [ $? -ne 0 ]
