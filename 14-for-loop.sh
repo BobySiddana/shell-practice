@@ -25,7 +25,7 @@ else
     EXIT 1
 fi
 }
-for package in ${PACKAGES[@]}
+for package in $@
 do
      dnf list installed $package &>>$LOG_FILE
 if [ $? -ne 0 ]
