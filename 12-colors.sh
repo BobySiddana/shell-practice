@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo -e "\e[31m hello 
+echo -e "\e[31m hello colors"
